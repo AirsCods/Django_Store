@@ -8,8 +8,8 @@ class ProductCategory(models.Model):
     description = models.TextField(verbose_name='Category description', null=True, blank=True)
 
     class Meta:
-        verbose_name = "Product Category"
-        verbose_name_plural = "Product Category's"
+        verbose_name = "Категория товаров"
+        verbose_name_plural = "Категории товаров"
 
     def __str__(self):
         return self.name
@@ -24,8 +24,8 @@ class Products(models.Model):
     category = models.ForeignKey(verbose_name='Product Category', to=ProductCategory, on_delete=models.CASCADE)
 
     class Meta:
-        verbose_name = "Product"
-        verbose_name_plural = "Product's"
+        verbose_name = "Товар"
+        verbose_name_plural = "Товары"
 
     def __str__(self):
         return f'Подукт: {self.name} | Категория: {self.category.name}'

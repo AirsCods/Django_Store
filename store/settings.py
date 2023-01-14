@@ -18,8 +18,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
-DEBUG = os.environ.get('DEBUG')
+# SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'django-insecure-(2t2)xa^*o5$_7ezfm%lxmz5^4&n%r1**m^wt*%y28nqk6ot0y'
+# DEBUG = os.environ.get('DEBUG')
+DEBUG = 'DEBUG'
 ALLOWED_HOSTS = []
 
 DOMAIN_NAME = 'http://localhost:8000'
